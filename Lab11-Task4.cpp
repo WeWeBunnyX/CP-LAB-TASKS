@@ -1,17 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int maxint(int array[], int n)
+void maxint(int array[], int n)
 {
     int maxnum = array[0];
+    int maxIndex = 0;
+
     for (int i = 1; i < n; i++)
     {
         if (array[i] > maxnum)
         {
             maxnum = array[i];
+            maxIndex = i;
         }
     }
-    return maxnum;
+
+    cout << "The largest number is " << maxnum << " at index " << maxIndex << endl;
 }
 
 int main()
@@ -28,9 +32,7 @@ int main()
         cin >> array[i];
     }
 
-    int maximum = maxint(array, n);
-
-    cout << "The largest number is " << maximum << endl;
+    maxint(array, n);
 
     return 0;
 }
