@@ -15,7 +15,7 @@ int main() {
 
         cout << "Enter three numbers separated by spaces: ";
     }
-
+    outputFile.close();
     cout <<"Check 'sum.txt' for results." << endl;
 
     return 0;
