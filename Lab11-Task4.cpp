@@ -15,7 +15,7 @@ void maxint(int array[], int n)
         }
     }
 
-    cout << "The largest number is " << maxnum << " at index " << maxIndex << endl;
+    cout << "\nThe largest number is " << maxnum << " at index " << maxIndex << endl;
 }
 
 int main()
@@ -25,7 +25,7 @@ int main()
     cin >> n;
     int array[n];
 
-    cout << "Enter " << n << " numbers to store in the array:" << endl;
+    cout << "\nEnter " << n << " numbers to store in the array:" << endl;
     for (int i = 0; i < n; i++)
     {
         cout << "Enter number " << i + 1 << ": ";
